@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/*-------------------------
+  初期値
+-------------------------*/
+
+:root {
+  --footer-color: #222222;
+  --link-color: #eeeeee;
+  --main-color: #ff3333;
+  --hover-color: #00ff00;
+}
+
+body {
+  padding-top: 56px;
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 414px) {
+  body {
+    padding-top: 55px;
+  }
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+/*-------------------------
+  トップ
+-------------------------*/
+.navbar {
+  background-color: var(--main-color);
+}
+
+.topics p {
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background-color: var(--key-color);
+  border: 1px solid var(--key-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--sub-color);
+  border: 1px solid var(--sub-color);
+}
+
+.topics .col-lg-4 {
+  scroll-margin-top: 50vw;
+}
+
+.gl-footer {
+  background-color: var(--main-color);
+}
+
+.gl-footer p{
+  color: var(--footer-color);
+}
+
+.gl-footer p a{
+  color: var(--link-color);
+}
+
+.gl-footer a:hover {
+  font-size: 20px;
+  color: var(--hover-color);
+}
