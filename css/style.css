@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/*-------------------------
+  初期値
+-------------------------*/
+:root {
+  --back-color: #ff0000;
+  --main-color: #ffffff;
+  --sub-color: #ffff00;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 414px) {
+  body {
+    padding-top: 55px;
+  }
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+/*-------------------------
+  トップ
+-------------------------*/
+#head01 img{
+  height: 600px;
+  width: 200px;
+}
+
+#head02 img{
+  height: 400px;
+  width: 400px;
+}
+
+#head03 img{
+  height: 400px;
+  width: 400px;
+}
+
+.navbar{
+  background-color: var(--back-color);
+}
+
+.topics p {
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  overflow: hidden;
+}
+
+.gl-footer{
+  background-color: var(--back-color);
+}
+
+.gl-footer p{
+color: var(--main-color);
+}
+
+.gl-footer a{
+  color: var(--sub-color);
+}
+
+.gl-footer a:hover{
+  color: var(--sub-color);
+  transform: translateY(-5px);
+}
